@@ -29,14 +29,15 @@ public class SearchTest {
 	private static String baseURL = "http://www.smythstoys.com/ie/en-ie/";
 	private static String expected = "";
 	private static String actual = "";
-
+	private static String logFile = "C:\\Users\\readsoft\\workspace\\smyths\\SearchTest.log";
+	
 	@BeforeClass
 	public static void setupOnce(){
 		driver = new FirefoxDriver();
 		wait = new WebDriverWait(driver, 10);
 		log = Logger.getLogger(SearchTest.class.getName());
 		try{
-			fh = new FileHandler("C:\\Users\\readsoft\\workspace\\smyths\\SearchTest.log");
+			fh = new FileHandler(logFile);
 		} catch(Exception e){
 			log.severe(e.getStackTrace().toString());
 		}
