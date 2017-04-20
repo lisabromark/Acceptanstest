@@ -66,7 +66,6 @@ public class BuyGuestCheckout {
 	//Test to buy item as guest without logging in
 	@Test
 	public void selectGuestCheckoutTest8() {	
-		String webid_sameAsDeliveryButton = "check_billingAddresSameDeliveryAddress";
 		String xpath_street1_PayPage = "//input[(@id='AddressLine1') and (@type='hidden')]";
 		String xpath_street2_PayPage = "//input[(@id='AddressLine2') and (@type='hidden')]";
 		String xpath_city_PayPage = "//input[(@id='CityTown') and (@type='hidden')]";
@@ -83,10 +82,10 @@ public class BuyGuestCheckout {
 		doSelectHomeDelivery();
 
 		//Go to delivery details page and enter name/address information
-		doEnterAddressInfo();
+		doEnterDeliveryAddressInfo();
 		
-		//Click checkbox "Same as delivery" to use same name/address values as filled in on previous page
-		driver.findElement(By.id(webid_sameAsDeliveryButton)).click();		
+		//Go to payment details page and use same name/address info as on previous page
+		doEnterPaymentAddressInfo();
 		
 		String finalTotalCost = driver.findElement(By.xpath(xpath_finalTotalCost)).getText().substring(1);
 
@@ -198,10 +197,10 @@ public class BuyGuestCheckout {
 		log.info("doSelectHomeDelivery() - END");	
 	}
 	
-	public void doEnterAddressInfo(){
+	public void doEnterDeliveryAddressInfo(){
+		log.info("doEnterDeliveryAddressInfo() - START");
 		String xpath_guestCheckoutButton = "//a[contains(@data-event,'Go to Quick Checkout Button')]";
 		String webid_freeShippingRadioButton = "19";
-		String webid_proceedToPaymentButton = "CreditCard";
 		String webid_firstName = "FirstName";
 		String webid_lastName = "LastName";
 		String webid_street1 = "AddressLine1";
@@ -212,7 +211,6 @@ public class BuyGuestCheckout {
 		String webid_confirmEmail = "ConfirmEmail";
 		String webid_phone = "Mobile";
 		String webid_deliveryInfo = "checkout-payment-delivery";
-		String webid_buyNowButton = "btn-proceed-pay";
 
 		//Click GuestCheckout-button and wait for next page
 		driver.findElement(By.xpath(xpath_guestCheckoutButton)).click();
@@ -231,9 +229,23 @@ public class BuyGuestCheckout {
 		Select countyDropdown = new Select(driver.findElement(By.id(webid_county)));
 		countyDropdown.selectByValue(county);
 		
+		log.info("doEnterDeliveryAddressInfo() - END");
+	}
+	
+	public void doEnterPaymentAddressInfo(){
+		log.info("doEnterPaymentAddressInfo() - START");
+		String webid_sameAsDeliveryButton = "check_billingAddresSameDeliveryAddress";
+		String webid_proceedToPaymentButton = "CreditCard";
+		String webid_buyNowButton = "btn-proceed-pay";
+
 		//Click button Proceed to Payment and wait for next page
 		driver.findElement(By.id(webid_proceedToPaymentButton)).click();
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(webid_buyNowButton)));		
+
+		//Click checkbox "Same as delivery" to use same name/address values as filled in on previous page
+		driver.findElement(By.id(webid_sameAsDeliveryButton)).click();		
+		
+		log.info("doEnterPaymentAddressInfo() - END");
 	}
 }
 
