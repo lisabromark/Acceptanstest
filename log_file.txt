@@ -1,0 +1,4 @@
+Apr 23, 2017 8:13:17 PM caliva.com.AddToBasketAndRemoveTest beforeClass
+INFO: @BeforeClass beforeClass()
+Apr 23, 2017 8:13:40 PM caliva.com.AddToBasketAndRemoveTest tearDownOnce
+INFO: @AfterClass tearDownOnce()

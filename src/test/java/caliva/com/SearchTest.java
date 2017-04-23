@@ -36,7 +36,8 @@ public class SearchTest {
 		wait = new WebDriverWait(driver, 10);
 		log = Logger.getLogger(SearchTest.class.getName());
 		try{
-			fh = new FileHandler("C:\\Users\\readsoft\\workspace\\smyths\\SearchTest.log");
+			fh = new FileHandler("log_file.txt");
+	// Lisas		fh = new FileHandler("C:\\Users\\readsoft\\workspace\\smyths\\SearchTest.log");
 		} catch(Exception e){
 			log.severe(e.getStackTrace().toString());
 		}
@@ -48,7 +49,7 @@ public class SearchTest {
 	@Before
 	public void resetData(){
 		driver.navigate().to(baseURL);
-		log.info("@Before resetData()");
+		//log.info("@Before resetData()");
 	}
 	
 	//Testing Search function and verifying that results are containing words used in search
@@ -100,13 +101,16 @@ public class SearchTest {
 			
 	}
 	
+	
+	
 	@After
 	public void tearDown() {
-		log.info("@After tearDown()");
+		//log.info("@After tearDown()");
 	}
 	
 	@AfterClass
 	public static void tearDownOnce(){
+		
 		log.info("@AfterClass tearDownOnce()");
 		driver.close();
 		try{
@@ -114,7 +118,8 @@ public class SearchTest {
 		} catch(InterruptedException e){
 			log.severe(e.getStackTrace().toString());
 		}
-		driver.quit();		
+		driver.quit();
+				
 	}
 	
 	public void doSearch(){
