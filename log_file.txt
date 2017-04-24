@@ -1,0 +1,36 @@
+Apr 24, 2017 10:11:57 AM caliva.com.BuyHomeDelivery setupOnce
+INFO: @BeforeClass setupOnce()
+Apr 24, 2017 10:11:59 AM caliva.com.BuyHomeDelivery resetData
+INFO: @Before resetData()
+Apr 24, 2017 10:11:59 AM caliva.com.BuyHomeDelivery selectHomeDeliveryTest7a
+INFO: selectHomeDeliveryTest7a() - START
+Apr 24, 2017 10:11:59 AM caliva.com.BuyHomeDelivery doSearch
+INFO: doSearch() - START
+Apr 24, 2017 10:12:04 AM caliva.com.BuyHomeDelivery doSearch
+INFO: doSearch() - END
+Apr 24, 2017 10:12:04 AM caliva.com.BuyHomeDelivery doAddToBasket
+INFO: doAddToBasket() - START
+Apr 24, 2017 10:12:08 AM caliva.com.BuyHomeDelivery doAddToBasket
+WARNING: The element reference is stale. Either the element is no longer attached to the DOM or the page has been refreshed.
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'STH-CHAHAH-LP', ip: '192.168.0.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\readsoft\AppData\Local\Temp\rust_mozprofile.Sqi6gprXyilM, rotatable=false, timeouts={implicit=0.0, page load=300000.0, script=30000.0}, pageLoadStrategy=normal, platform=ANY, specificationLevel=0.0, moz:accessibilityChecks=false, acceptInsecureCerts=false, browserVersion=52.0.2, platformVersion=10.0, moz:processID=23380.0, browserName=firefox, javascriptEnabled=true, platformName=windows_nt}]
+Session ID: d378884e-6ccd-4d7a-ad51-fe99e598253c
+Apr 24, 2017 10:12:08 AM caliva.com.BuyHomeDelivery doAddToBasket
+INFO: doAddToBasket() - END
+Apr 24, 2017 10:12:08 AM caliva.com.BuyHomeDelivery doSelectHomeDelivery
+INFO: doSelectHomeDelivery() - START
+Apr 24, 2017 10:12:13 AM caliva.com.BuyHomeDelivery doSelectHomeDelivery
+INFO: doSelectHomeDelivery() - END
+Apr 24, 2017 10:12:13 AM caliva.com.BuyHomeDelivery selectHomeDeliveryTest7a
+INFO: Expected: Guest Checkout
+Apr 24, 2017 10:12:13 AM caliva.com.BuyHomeDelivery selectHomeDeliveryTest7a
+INFO: Actual: Guest Checkout
+Apr 24, 2017 10:12:13 AM caliva.com.BuyHomeDelivery selectHomeDeliveryTest7a
+INFO: selectHomeDeliveryTest7a() - END
+Apr 24, 2017 10:12:13 AM caliva.com.BuyHomeDelivery tearDown
+INFO: @After tearDown()
+Apr 24, 2017 10:12:13 AM caliva.com.BuyHomeDelivery tearDownOnce
+INFO: @AfterClass tearDownOnce()

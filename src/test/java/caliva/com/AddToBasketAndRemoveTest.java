@@ -29,7 +29,7 @@ public class AddToBasketAndRemoveTest {
 	private static By listOfProducts = By.className("item");
 	private static By basketPrice = By.className("basket-price");
 	private static By btnAddToBasket = By.id("main-add-to-basket");
-	private static String expected = "€0.00";
+	private static String expected = "\u20AC0.00";
 	private static By removeItemLink = By.partialLinkText("remove");
 	private static By basketIcon = By.id("inner-mini");
     private static By btnCollect = By.id("btnCollect");

@@ -31,7 +31,7 @@ public class BuySecureConnection {
 	private static String actual = "";
 	private static String baseURL = "http://www.smythstoys.com/ie/en-ie/";
 	//private static String logFile = "C:\\Users\\readsoft\\workspace\\smyths\\SearchTest.log";
-	private static String logFile = "C:\\Temp\\BuySecureConnection.log";
+	private static String logFile = "log_file.txt";
 	private static String totalCost = "";
 	private static String firstName = "Mary";
 	private static String lastName = "O'Reilly";

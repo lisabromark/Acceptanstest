@@ -30,7 +30,7 @@ public class BuyHomeDelivery {
 	private static String expected = "";
 	private static String actual = "";
 	//private static String logFile = "C:\\Users\\readsoft\\workspace\\smyths\\SearchTest.log";
-	private static String logFile = "C:\\Temp\\BuyHomeDelivery.log";
+	private static String logFile = "log_file.txt";
 	
 	@BeforeClass
 	public static void setupOnce(){

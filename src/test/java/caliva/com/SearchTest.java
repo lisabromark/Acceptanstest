@@ -29,35 +29,27 @@ public class SearchTest {
 	private static String baseURL = "http://www.smythstoys.com/ie/en-ie/";
 	private static String expected = "";
 	private static String actual = "";
-<<<<<<< HEAD
+
 	private static String logFile = "log_file.txt";
 
-=======
-	private static String logFile = "C:\\Users\\readsoft\\workspace\\smyths\\SearchTest.log";
-	
->>>>>>> 12663424bc6c051c32b26fdb93224432a3385c14
+
 	@BeforeClass
 	public static void setupOnce() {
 		driver = new FirefoxDriver();
 		wait = new WebDriverWait(driver, 10);
 		log = Logger.getLogger(SearchTest.class.getName());
-<<<<<<< HEAD
+
 		try {
 			fh = new FileHandler(logFile);
 		} catch (Exception e) {
-=======
-		try{
 		
-			fh = new FileHandler("C:\\Users\\readsoft\\workspace\\smyths\\SearchTest.log");
-
-		} catch(Exception e){
->>>>>>> 12663424bc6c051c32b26fdb93224432a3385c14
 			log.severe(e.getStackTrace().toString());
 		}
 		log.addHandler(fh);
 		fh.setFormatter(new SimpleFormatter());
 		log.info("@BeforeClass setupOnce()");
 	}
+	
 
 	@Before
 	public void resetData() {
@@ -158,24 +150,19 @@ public class SearchTest {
 		
 	}
 	
-<<<<<<< HEAD
 
-=======
-	
-	
->>>>>>> 12663424bc6c051c32b26fdb93224432a3385c14
 	@After
 	public void tearDown() {
 		//log.info("@After tearDown()");
 	}
 
 	@AfterClass
-<<<<<<< HEAD
-	public static void tearDownOnce() {
-=======
+
+
+
 	public static void tearDownOnce(){
 		
->>>>>>> 12663424bc6c051c32b26fdb93224432a3385c14
+
 		log.info("@AfterClass tearDownOnce()");
 		driver.close();
 		try {
@@ -184,10 +171,7 @@ public class SearchTest {
 			log.severe(e.getStackTrace().toString());
 		}
 		driver.quit();
-<<<<<<< HEAD
-=======
-				
->>>>>>> 12663424bc6c051c32b26fdb93224432a3385c14
+
 	}
 
 	public void doSearch() {

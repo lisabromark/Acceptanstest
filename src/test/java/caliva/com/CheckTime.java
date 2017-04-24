@@ -23,7 +23,7 @@ public class CheckTime {
 	private static WebDriver driver;
 	private static WebDriverWait wait;
 	private static String baseURL = "http://www.smythstoys.com/ie/en-ie/";
-	private static String logFile = "C:\\Temp\\CheckResponseTime.log";
+	private static String logFile = "log_file.txt";
 	
 	@BeforeClass
 	public static void setupOnce(){
