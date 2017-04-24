@@ -1,20 +1,24 @@
-Apr 19, 2017 1:21:03 PM caliva.com.SearchTest setupOnce
+Apr 24, 2017 8:54:18 AM caliva.com.SearchTest setupOnce
 INFO: @BeforeClass setupOnce()
-Apr 19, 2017 1:21:05 PM caliva.com.SearchTest resetData
+Apr 24, 2017 8:54:20 AM caliva.com.SearchTest resetData
 INFO: @Before resetData()
-Apr 19, 2017 1:21:09 PM caliva.com.SearchTest filterSearchTest3a
-INFO: Total nr of items: 41 products
-Apr 19, 2017 1:21:09 PM caliva.com.SearchTest filterSearchTest3a
-INFO: Filtered nr of items: 41
-Apr 19, 2017 1:21:09 PM caliva.com.SearchTest tearDown
+Apr 24, 2017 8:54:26 AM caliva.com.SearchTest filterSearchTest3a
+INFO: Total nr of items: 39 products
+Apr 24, 2017 8:54:26 AM caliva.com.SearchTest filterSearchTest3a
+INFO: Filtered nr of items: 39
+Apr 24, 2017 8:54:26 AM caliva.com.SearchTest tearDown
 INFO: @After tearDown()
-Apr 19, 2017 1:21:11 PM caliva.com.SearchTest resetData
+Apr 24, 2017 8:54:27 AM caliva.com.SearchTest resetData
 INFO: @Before resetData()
-Apr 19, 2017 1:21:13 PM caliva.com.SearchTest searchTest1a
+Apr 24, 2017 8:54:29 AM caliva.com.SearchTest tearDown
+INFO: @After tearDown()
+Apr 24, 2017 8:54:31 AM caliva.com.SearchTest resetData
+INFO: @Before resetData()
+Apr 24, 2017 8:54:34 AM caliva.com.SearchTest searchTest1a
 INFO: Expected: Star Wars
-Apr 19, 2017 1:21:13 PM caliva.com.SearchTest searchTest1a
+Apr 24, 2017 8:54:34 AM caliva.com.SearchTest searchTest1a
 INFO: Actual: Star Wars Bladebuilders Jedi Master Lightsaber
-Apr 19, 2017 1:21:13 PM caliva.com.SearchTest tearDown
+Apr 24, 2017 8:54:34 AM caliva.com.SearchTest tearDown
 INFO: @After tearDown()
-Apr 19, 2017 1:21:13 PM caliva.com.SearchTest tearDownOnce
+Apr 24, 2017 8:54:34 AM caliva.com.SearchTest tearDownOnce
 INFO: @AfterClass tearDownOnce()
